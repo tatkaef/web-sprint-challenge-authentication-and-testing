@@ -3,12 +3,11 @@ const bcryptjs = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 
-const Users = require("./users/users-model.js");
-const { isValid } = require("./users/users-service.js");
+const Users = require("./users/user-model.js");
+const { isValid } = require("./users/user-service.js");
 const { jwtSecret } = require('./secrets.js')
 
 router.post('/register', (req, res) => {
-  res.end('implement register, please!');
   /*
     IMPLEMENT
     You are welcome to build additional middlewares to help with the endpoint's functionality.
